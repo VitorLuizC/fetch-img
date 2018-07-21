@@ -10,3 +10,8 @@ package-lock.json
 # Log files.
 *.log
 *.log.*
+
+# Generated sources & type definitions.
+src/*.js
+dist/
+types/

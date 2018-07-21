@@ -2,9 +2,19 @@
   "name": "load-image-element",
   "version": "0.0.0",
   "description": "Async resolves an HTMLImageElement (<IMG />).",
-  "main": "index.js",
+  "main": "dist/load-image-element.cjs.js",
+  "types": "types/index.d.ts",
+  "module": "dist/load-image-element.es.js",
+  "browser": "dist/load-image-element.js",
+  "files": [
+    "dist/",
+    "types/",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && bili src/index.js --format es,cjs,umd --js buble --banner"
   },
   "repository": {
     "type": "git",
@@ -24,5 +34,9 @@
   "bugs": {
     "url": "https://github.com/VitorLuizC/load-image-element/issues"
   },
-  "homepage": "https://github.com/VitorLuizC/load-image-element#readme"
+  "homepage": "https://github.com/VitorLuizC/load-image-element#readme",
+  "devDependencies": {
+    "bili": "^3.1.2",
+    "typescript": "^2.9.2"
+  }
 }

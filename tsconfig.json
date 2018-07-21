@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    // Settings for generate JavaScript sources.
+    "target": "es2015",
+    "module": "es2015",
+
+    // Settings for generate type definitions.
+    "strict": true,
+    "declaration": true,
+    "declarationDir": "types/"
+  },
+  "include": [ "src/" ],
+  "exclude": [ "dist/", "types/" ]
+}
