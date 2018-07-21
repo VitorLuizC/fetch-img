@@ -1,0 +1,28 @@
+{
+  "name": "load-image-element",
+  "version": "0.0.0",
+  "description": "Async resolves an HTMLImageElement (<IMG />).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorLuizC/load-image-element.git"
+  },
+  "keywords": [
+    "async",
+    "image",
+    "html"
+  ],
+  "author": {
+    "url": "https://vitorluizc.github.io/",
+    "name": "Vitor Luiz Cavalcanti",
+    "email": "vitorluizc@outlook.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VitorLuizC/load-image-element/issues"
+  },
+  "homepage": "https://github.com/VitorLuizC/load-image-element#readme"
+}
