@@ -2,7 +2,7 @@
  * Fetch an image using an `Image` instance.
  * @param source - Image source, or `src` attribute.
  */
-export default (source: string): Promise<HTMLImageElement> => new Promise((resolve, reject) => {
+const fetchIMG = (source: string): Promise<HTMLImageElement> => new Promise((resolve, reject) => {
   const image = new Image();
 
   /**
@@ -38,3 +38,5 @@ export default (source: string): Promise<HTMLImageElement> => new Promise((resol
   image.addEventListener('error', onError);
   image.src = source;
 });
+
+export default fetchIMG;

@@ -1,25 +1,25 @@
-# load-image-element
+# Fetch IMG
 
-Asynchronous loads an image source and resolve as `HTMLImageElement` (A.K.A. `<img />` or `Image`).
+Fetch asynchronously an image using it's source and resolve as `HTMLImageElement`.
 
 ## Install
 
 This module is published under NPM registry, so you can install using any Node.js package manager.
 
 ```sh
-npm install load-image-element --save
+npm install fetch-img --save
 
 # Use the command below for Yarn.
-yarn add load-image-element
+yarn add fetch-img
 ```
 
 ## Usage
 
 ```js
-import load from 'load-image-element';
+import fetchIMG from 'fetch-img';
 
-load('https://nodejs.org/static/images/logo.svg')
-  .then((element) => document.body.appendChild(element))
+fetchIMG('https://nodejs.org/static/images/logo.svg')
+  .then((img) => document.body.appendChild(img))
   .catch((error) => console.error(error));
 ```
 

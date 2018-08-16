@@ -1,11 +1,14 @@
 {
-  "name": "load-image-element",
-  "version": "0.0.0",
-  "description": "Async resolves an HTMLImageElement (<IMG />).",
-  "main": "dist/load-image-element.cjs.js",
-  "types": "types/index.d.ts",
-  "module": "dist/load-image-element.es.js",
-  "browser": "dist/load-image-element.js",
+  "name": "fetch-img",
+  "version": "0.1.0",
+  "description": "Fetch asynchronously an image using it's source and resolve as `HTMLImageElement`.",
+  "cdn": "dist/fetch-img.js",
+  "main": "dist/fetch-img.cjs.js",
+  "types": "index.d.ts",
+  "unpkg": "dist/fetch-img.js",
+  "module": "dist/fetch-img.es.js",
+  "jsdelivr": "dist/fetch-img.js",
+  "umd:main": "dist/fetch-img.js",
   "files": [
     "dist/",
     "index.d.ts"
@@ -14,7 +17,7 @@
     "test:typescript": "tsc index.spec.ts --target es2017 --moduleResolution node",
     "test": "yarn build && yarn test:typescript && ava index.spec.js --timeout 10s",
     "build:typescript": "tsc index.ts --strict --target es2015 --declaration",
-    "build:bili": "bili index.js --format es,cjs,umd --js buble --banner",
+    "build:bili": "bili index.js --format es,cjs,umd --js buble --banner --moduleName fetchIMG",
     "build": "yarn build:typescript && yarn build:bili"
   },
   "repository": {
@@ -24,7 +27,10 @@
   "keywords": [
     "async",
     "image",
-    "html"
+    "html",
+    "load",
+    "fetch",
+    "img"
   ],
   "author": {
     "url": "https://vitorluizc.github.io/",
@@ -40,6 +46,6 @@
     "ava": "^0.25.0",
     "bili": "^3.1.2",
     "browser-env": "^3.2.5",
-    "typescript": "^2.9.2"
+    "typescript": "^3.0.1"
   }
 }
