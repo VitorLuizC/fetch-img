@@ -14,7 +14,9 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && bili src/index.js --format es,cjs,umd --js buble --banner"
+    "build:typescript": "tsc index.ts --strict --target es2015 --declaration",
+    "build:bili": "bili index.js --format es,cjs,umd --js buble --banner",
+    "build": "yarn build:typescript && yarn build:bili"
   },
   "repository": {
     "type": "git",
