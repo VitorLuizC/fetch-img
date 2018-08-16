@@ -1,5 +1,7 @@
 # Fetch IMG
 
+[![Build Status](https://travis-ci.org/VitorLuizC/fetch-img.svg?branch=master)](https://travis-ci.org/VitorLuizC/fetch-img)
+
 Fetch asynchronously an image using it's source and resolve as `HTMLImageElement`.
 
 ## Install
